@@ -1,5 +1,5 @@
-# Winter
+# Hong Kyu LEE
 
-# 깃허브 연습
-Visual Studio Code > github
+Using for Visual Studio Code / Python 3.7.6
+
 

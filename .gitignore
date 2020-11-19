@@ -1,2 +1,7 @@
 data
 logs
+*.jpg
+*.png
+*.bmp
+images
+image

@@ -1,7 +1,8 @@
 import sys
 import numpy as np
 import cv2
-
+# 원색적인 색상 찾을때
+# RGB 는 밝기가 어두운 사진에서는 색을 찾아내기 힘들기 때문에 HSV를 사용한다
 
 src = cv2.imread('candies.png')
 #src = cv2.imread('candies2.png')

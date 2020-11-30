@@ -32,7 +32,7 @@ ycrcb_planes = cv2.split(src_ycrcb)
 ycrcb_planes[0] = cv2.equalizeHist(ycrcb_planes[0])
 
 dst_ycrcb = cv2.merge(ycrcb_planes)
-dst = cv2.cvtColor(dst_ycrcb, cv2.COLOR_YCrCb2BGR)
+dst = cv2.cvtColor(dst_ycrcb, cv2.COLOR_YCrCb2BGR) # 재변환을 꼭해주어야 한다
 
 cv2.imshow('src', src)
 cv2.imshow('dst', dst)

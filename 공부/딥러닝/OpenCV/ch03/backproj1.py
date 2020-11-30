@@ -14,7 +14,7 @@ if src is None:
 x, y, w, h = cv2.selectROI(src)
 
 src_ycrcb = cv2.cvtColor(src, cv2.COLOR_BGR2YCrCb)
-crop = src_ycrcb[y:y+h, x:x+w]
+crop = src_ycrcb[y:y+h, x:x+w] # 사용자가 선택한 사각형 영역의 부분
 
 channels = [1, 2]
 cr_bins = 128
@@ -25,6 +25,8 @@ cb_range = [0, 256]
 ranges = cr_range + cb_range
 
 hist = cv2.calcHist([crop], channels, None, histSize, ranges)
+# 여기까지가 히스토그램 계산
+
 hist_norm = cv2.normalize(cv2.log(hist+1), None, 0, 255, cv2.NORM_MINMAX, cv2.CV_8U)
 
 # 입력 영상 전체에 대해 히스토그램 역투영

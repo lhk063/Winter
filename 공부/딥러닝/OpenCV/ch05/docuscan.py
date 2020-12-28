@@ -25,7 +25,8 @@ def drawROI(img, corners):
 def onMouse(event, x, y, flags, param):
     global srcQuad, dragSrc, ptOld, src
 
-    if event == cv2.EVENT_LBUTTONDOWN:
+    if event == cv2.EVENT_LBUTTONDOWN: # 마우스를 클릭하였을때
+        
         for i in range(4):
             if cv2.norm(srcQuad[i] - (x, y)) < 25:
                 dragSrc[i] = True
@@ -60,7 +61,7 @@ if src is None:
 # 입력 영상 크기 및 출력 영상 크기
 h, w = src.shape[:2]
 dw = 500
-dh = round(dw * 297 / 210)  # A4 용지 크기: 210x297cm
+dh = round(dw * 297 / 210)  # A4 용지 크기: 가로 210 x 세로 297cm
 
 # 모서리 점들의 좌표, 드래그 상태 여부
 srcQuad = np.array([[30, 30], [30, h-30], [w-30, h-30], [w-30, 30]], np.float32)

@@ -1,10 +1,10 @@
-Gateway Company  
+## Gateway Company  
 
 install venv : python -m venv [venvname]  
 activate venv : source [venvname]/Scripts/activate  
 deactivate venv : deactivate  
 
-### import library  
+### import Library  
 
 pip check : pip--version / pip install --upgrade pip  
 python check : python --vesion  

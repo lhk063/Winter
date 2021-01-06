@@ -1,6 +1,6 @@
 ## Gateway Company  
 
-install venv : python -m venv [venvname]  
+install venv : python -m venv [venvname]  / virtualenv
 activate venv : source [venvname]/Scripts/activate  
 deactivate venv : deactivate  
 

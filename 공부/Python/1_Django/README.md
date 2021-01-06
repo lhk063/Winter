@@ -19,3 +19,8 @@ Create admin account : python manage.py createsuperuser
 - email adress :
 - password : caution! none visual 
 - password (again) : caution! none visual
+
+
+models.py 수정했을경우 항시 입력
+python manage.py makemigrations 
+python manage.py migrate
